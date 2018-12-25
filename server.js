@@ -27,9 +27,12 @@ app.use(passport.initialize());
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/MERN-user-framework",  { useNewUrlParser: true });
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/MERN-user-framework",
+  { useNewUrlParser: true }
+);
 
 // Start the API server
-app.listen(PORT, function() {
+app.listen(PORT, () => {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
