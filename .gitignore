@@ -8,3 +8,7 @@ client/.env
 
 # Any bug reports
 .vscode 
+
+#package-locks
+package.lock.json
+client/package.lock.json
