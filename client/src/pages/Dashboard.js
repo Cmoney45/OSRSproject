@@ -14,10 +14,6 @@ const cardStyle = {
 
 class Dashboard extends Component {
 
-    componentDidMount = e => {
-        this.props.getCurrentUser();
-    }
-
     onLogoutClick = e => {
         e.preventDefault();
         this.props.logoutUser();
